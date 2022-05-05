@@ -18,4 +18,5 @@ jobs:
 
       - name: Install dependencies and generate project files
         run: |
+          gci .\vcpkg\scripts\buildsystems\
           cmake -B build -DCMAKE_TOOLCHAIN_FILE=.\vcpkg\scripts\buildsystems\vcpkg.cmake --preset default
